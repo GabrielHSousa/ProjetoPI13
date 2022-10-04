@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: gainsboro;
+    width: 99vw;
+    min-width: 580px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; ;
+
+}
+fieldset{
+    border: none;
+    border-radius: 10%;
+    height: 20px;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    padding:0%;
+    position: relative;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 100rem;
+    font-size: 20px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+form [type="submit"]{
+    height: 47px;
+    width: 250%;
+    margin: 10%;
+    padding: 20%;
+    background-color: rgba(88, 82, 255);
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+input{
+    margin-top: 0.8px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+#input:hover{
+
+    color: rgb(0, 0, 0);
+
+    transition: 0.3s all;
+
+}
+
+#input:hover{
+
+    background-color: rgb(88, 82, 255);
+
+    color: rgb(255, 255, 255);  
+
+}
+#cadastra li{
+    top: 97%;
+    height: 10px;
+    padding-left: 220px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color:#6f7075;
+}
+#cadastra h5{
+    text-align: center;
+    height: 27px;
+    margin-top: 10px;
+    top: 92%;
+    height: 40px;
+    padding-left: 220px;
+    position:absolute;
+    
+}
+
+.box{
+    width: 65px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 2.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.box:hover{
+    width: 200px;
+    background: #c32aa3;
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px #b315917c;
+}
+.box:nth-child(2):hover{
+    background: #25d366;
+    box-shadow: 0 0 50px #25d3657e;
+}
+.box:nth-child(3):hover{
+    background: #1877f2;
+    box-shadow: 0 0 50px #1876f285;
+}
+.box:nth-child(4):hover{
+    background: #1da1f2;
+    box-shadow: 0 0 50px #1da0f280;
+}
+.navbar p{
+    transform: translate(60px);
+}
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .4s ease;
+}
+.instagram{
+    background-color: #c32aa3;
+}
+.whatsapp{
+    background-color: #25d366;
+}
+.facebook{
+    background-color: #1877f2;
+}
+.twitter{
+    background-color: #1da1f2;
+}
+.box:hover .icon{
+    background: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 20px rgba(0,0,0,0.26);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 7vh;
+    width: 100vw;
+
+}
+header ul li{
+    display: flex;
+    list-style: none;
+    display: inline-block;
+
+
+}
+header a {
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+}
+header a:hover{
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+#inicial{
+    background:url(../imagens/cq5dam.thumbnail.cropped.750.422.jpeg) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+#inicial h2{
+    font-size: 52px;
+    margin: 2%;
+}
+#inicial a{
+    width: 150px;
+    height: 42px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+
+    animation-name: botao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition:0.5s;
+
+
+}
+#inicial a:hover{
+    background: rgba(0, 0, 4, 0.452);
+    transition:0.5s;
+}
+@keyframes botao{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+    
+}
+#anunciar{
+    background: #6f7075;
+    color:white;
+    width: 80vw;
+    height: 28vh;
+    border-radius: 20px;
+    margin: -7.5vh auto 2vh ;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;  
+}
+#anunciar div{
+    width: 40%;
+}
+#anunciar input[type="date"]{
+    width: 95%;
+    border-radius:8px ;
+    border: none;
+    font-size: 2em;
+    text-align: center;
+
+}
+#anunciar h3{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+#anunciar p{
+    font-size: 0.9em;
+
+}
+#anuncios{
+    height: 45vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+}
+#anuncios .anuncio-imagem{
+    display: flex;
+    height: 30vh;
+}
+.anun{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    margin: 0.8%;
+    width: 23vw;
+}
+.anun h6,h4{
+    font-weight:400;
+}
+.anun h4{
+    font-size: 20px;
+
+}
+.anun h6{
+    font-size: 13px;
+}
+.anun img{
+    border-radius:3px;
+    transition: 0.1s;
+}
+.anun img:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+.servico a{
+    height: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    margin: 0.10vh auto 2vh;
+    width: 99vw;
+    color: white;
+    background: white;
+}
+.servicos {
+    background: #bebfc5a8;
+    color:black;
+    width: 99vw;
+    height: 20vh;
+    border-radius: 10px;
+    margin: -0.1vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
